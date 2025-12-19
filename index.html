@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoctiScope Tarot Divination</title>
+    <meta name="color-profile" content="sRGB">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/left.css">
+    <link rel="stylesheet" href="styles/right.css">
+
+</head>
+<body>
+    <div class="page">
+        <!-- 左侧区域 (70%) -->
+        <div class="left-panel">
+            <div class="question-section">
+                <h2 id="question-label">向高我提问：</h2>
+                <div class="question-input-wrapper">
+                    <textarea class="question-input" id="question-input" placeholder="输入你的问题..." rows="4"></textarea>
+                    <button id="draw-btn" class="draw-button">
+                        <h3>抽牌</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="answer-section">
+                <div class="answer-container" id="answer-container" style="display: none;">
+                    <h2 class="answer-title" id="answer-title">高我回答：</h2>
+                    <div id="cards-container" class="cards-container"></div>
+                </div>
+            </div>
+            <button id="copy-btn" class="copy-button">
+                <h3>复制问题和回答</h3>
+            </button>
+        </div>
+        <div class="right-panel">
+            <div class="language-toggle">
+                <button id="language-btn" class="language-btn">
+                    <p>EN</p>
+                </button>
+            </div>
+            <div class="web-title">
+                <h1 id="web-title-text">Nocti🪢cope塔罗占卜</h1>
+            </div>
+            <div class="condition-frame">
+                <h2 id="mode-selection-label">模式选择</h2>
+                <label class="default-mode-label">
+                    <input type="radio" id="default-mode-radio" checked />
+                    <span id="default-mode-label">默认全自由模式</span>
+                </label>
+                <label class="advanced-mode-label">
+                    <input type="radio" id="advanced-mode-radio" />
+                    <span id="advanced-mode-label">高级自定义模式</span>
+                </label>
+                <div id="advanced-settings" class="advanced-settings-css">
+                    <h3 id="select-pool-label">选择卡池</h3>
+                    <select id="pool-select" class="pool-select">
+                        <option value="1" data-text="1">完整牌池  78张</option>
+                        <option value="2" data-text="2">大阿尔克那牌池  22张</option>
+                        <option value="3" data-text="3">小阿尔克那牌池  56张</option>
+                        <option value="4" data-text="4">宫廷牌池  16张</option>
+                        <option value="5" data-text="5">数字牌池  40张</option>
+                    </select>
+                    <h3 id="card-repeat-label">牌面重复</h3>
+                    <select id="allow-repeat-select" class="pool-select">
+                        <option value="true" data-text="允许重复">可重复</option>
+                        <option value="false" data-text="不允许重复">不重复</option>
+                    </select>
+                    <h3 id="custom-card-count-label">是否自定牌数</h3>
+                    <select id="card-count-mode" class="pool-select">
+                        <option value="default" data-text="默认-随机牌数">默认-随机牌数</option>
+                        <option value="fixed" data-text="自定固定牌数">自定固定牌数</option>
+                        <option value="random-range" data-text="自定随机牌数阈值">自定随机牌数阈值</option>
+                    </select>
+                    <div id="card-count-input-wrapper" style="display: none;">
+                        <input type="number" id="card-count-input" class="card-count-input" min="1" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/translation-manager.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

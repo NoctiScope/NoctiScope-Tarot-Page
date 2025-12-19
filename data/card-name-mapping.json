@@ -1,0 +1,56 @@
+{
+  "zh_to_en": {
+    "major_arcana": {
+      "愚者": "The Fool",
+      "魔术师": "The Magician",
+      "女祭司": "The High Priestess",
+      "女皇": "The Empress",
+      "皇帝": "The Emperor",
+      "教皇": "The Hierophant",
+      "恋人": "The Lovers",
+      "战车": "The Chariot",
+      "力量": "Strength",
+      "隐者": "The Hermit",
+      "命运之轮": "Wheel of Fortune",
+      "正义": "Justice",
+      "倒吊人": "The Hanged Man",
+      "死神": "Death",
+      "节制": "Temperance",
+      "恶魔": "The Devil",
+      "高塔": "The Tower",
+      "星星": "The Star",
+      "月亮": "The Moon",
+      "太阳": "The Sun",
+      "审判": "Judgement",
+      "世界": "The World"
+    },
+    "suits": {
+      "宝剑": "Swords",
+      "圣杯": "Cups",
+      "权杖": "Wands",
+      "星币": "Pentacles"
+    },
+    "numbers": {
+      "一": "Ace",
+      "二": "Two",
+      "三": "Three",
+      "四": "Four",
+      "五": "Five",
+      "六": "Six",
+      "七": "Seven",
+      "八": "Eight",
+      "九": "Nine",
+      "十": "Ten"
+    },
+    "court_ranks": {
+      "侍者": "Page",
+      "骑士": "Knight",
+      "王后": "Queen",
+      "国王": "King"
+    },
+    "directions": {
+      "正位": "Upright",
+      "逆位": "Reversed"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+# Card Drawing Demo
+
+A small experimental Python script for random tarot card drawing, combining divination-inspired workflows with coding.
+
+## What it does
+- Draws a user-defined number of cards
+- Allows repeated draws (with replacement)
+- Supports upright and reversed orientations
+- Outputs results in a simple, readable text format
+
+## Why
+- Reduce friction: physical card drawing can be tiring. A script enables quick iterations and lightweight logging.
+- Repeats as emphasis: repetition can be treated as a signal (e.g., emphasis), which differs from many traditional no-replacement draws.
+
+## Status
+Experimental. Treat it as a personal reflection/communication tool, focusing on your own context.
+
+## Notes
+- This repo is intentionally minimal—an interdisciplinary exploration rather than a polished software package.
+- Text-only output (no visuals).
+- Written with the standard Rider–Waite–Smith (RWS) tarot as a reference. You may use your own physical deck while reading the text output.
+- If you are unsure how to interpret the results, you can paste the output into an AI assistant (e.g., ChatGPT, Gemini, Gemini, DeepSeek) for brainstorming—use your judgment.
+
+### Guidelines
+- Avoid asking the same question too many times in a short period.
+- Use this tool for self-reflection rather than probing other people’s privacy.
+
+## License
+Copyright © 2025 NoctiScope.
+
+- Non-commercial use only. Commercial use requires the author’s permission.
+- Shared for learning and exchange. You’re welcome to build your own version on top of it.
+- Please credit the original source and do not claim it as your own invention.

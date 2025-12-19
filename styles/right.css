@@ -1,0 +1,119 @@
+.right-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: white;
+}
+
+/* 响应式设计 - 竖屏模式 */
+@media (max-width: 768px) {
+    .right-panel {
+        grid-template-rows: auto;
+        min-height: auto;
+    }
+}
+
+
+.language-toggle {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 10;
+}
+
+.language-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: var(--a-color);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+}
+
+.language-btn:hover {
+    color: var(--a-color);
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.web-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    color: var(--a-color);
+}
+
+.web-title h1 {
+    text-shadow: 1px 1px 1px color-mix(in srgb, var(--a-color) 30%, transparent);
+}
+
+.web-title h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.condition-frame {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.condition-frame h2 {
+    margin: 0;
+    color: var(--a-color);
+}
+
+.condition-frame h3 {
+    margin: 0;
+    color: var(--a-color);
+    padding-left: 0px;
+}
+
+.advanced-settings-css {
+    display: none;
+    flex-direction: column;
+}
+
+.advanced-settings-css h3 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.default-mode-label, .advanced-mode-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--a-color);
+    font-size: 14px;
+}
+
+.card-count-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid var(--c-color);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--a-color);
+    box-sizing: border-box;
+}
+
+.card-count-input:focus {
+    outline: none;
+    border-color: var(--b-color);
+}
+
+
+
